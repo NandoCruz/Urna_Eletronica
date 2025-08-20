@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: Poppins, sans-serif;
+}
+
+body{
+    background-color: #A6D1E2;
+}
+
+.urna{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    width: 750px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0;
+    background-color: white;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 320px;
+    height: 315px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #CDCBCE;
+}
+
+.inputs{
+    display: flex;
+    margin-top: 10px;
+}
+
+.inputs input{
+    width: 50px;
+    font-size: 30px;
+    border: 2px solid rgb(167, 166, 166);
+    border-radius: 10px;
+    margin: 20px 5px;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    z-index: 999;
+    background-color: white;
+}
+
+.content img{
+    width: 150px;
+}
+
+.content .nome{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.butons{
+    width: 395px;
+    height: 315px;
+}
+
+.butons .btn{
+    width: 120px;
+    height: 55px;
+    margin: 4px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #252525;
+}
+
+.butons .branco{
+    background-color: rgb(228, 228, 228);
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.butons .vermelho{
+    background-color: rgb(245, 14, 14);
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.butons .verde{
+    background-color: green;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    padding: 20px;
+    width: 600px;
+    height: 400px;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.tabela #resultado{
+    font-size: 20px;
+    color: black;
+}
+
+.tabela h1{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.tabela table {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.tabela table tr th{
+    font-weight: 400;
+    background-color: rgb(213, 213, 213);
+}
+
+.tabela table tr th.nome{
+    text-align: left;
+    padding-left: 50px;
+}
+
+.tabela table tr th.titulo{
+    font-weight: 700;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Urna Eletronica</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="urna">
+        <div class="content">
+            <div class="inputs">
+                <input type="text" size="1" id="campo1" maxlength="1" value="" readonly="readonly"/>
+                <input type="text" size="1" id="campo2" maxlength="1" value="" readonly="readonly"/>
+            </div>
+            <img class="off" id="foto" src="imagens/foto01.png" alt="">
+            <p class="nome" id="nome"></p>
+        </div>
+        <div class="butons">
+            <button class="btn click" onclick="insert('1')">1</button>
+            <button class="btn click" onclick="insert('2')">2</button>
+            <button class="btn click" onclick="insert('3')">3</button>
+            <button class="btn click" onclick="insert('4')">4</button>
+            <button class="btn click" onclick="insert('5')">5</button>
+            <button class="btn click" onclick="insert('6')">6</button>
+            <button class="btn click" onclick="insert('7')">7</button>
+            <button class="btn click" onclick="insert('8')">8</button>
+            <button class="btn click" onclick="insert('9')">9</button>
+            <button class="btn">*</button>
+            <button class="btn click" onclick="insert('0')">0</button>
+            <button class="btn">#</button>
+            <button class="btn branco" onclick="btnBranco()">Branco</button>
+            <button class="btn vermelho" onclick="btnCorrigir()">Corrige</button>
+            <button class="btn verde" onclick="btnConfirma()">Confirma</button>
+        </div>
+    </div>
+
+    <div class="tabela">
+        <h1>Candidatos</h1>
+        <table>
+            <tr>
+                <th class="titulo">Numero</th>
+                <th class="titulo">Nome</th>
+                <th class="titulo">Voto</th>
+            </tr>
+            <tr>
+                <th>--</th>
+                <th class="nome">Em Branco</th>
+                <th id="voto0">0</th>
+            </tr>
+            <tr>
+                <th>00</th>
+                <th class="nome">Inválido</th>
+                <th id="voto1">0</th>
+            </tr>
+            <tr>
+                <th>11</th>
+                <th class="nome">Fernando Cruz</th>
+                <th id="voto2">0</th>
+            </tr>
+            <tr>
+                <th>22</th>
+                <th class="nome">Carol Aguiar</th>
+                <th id="voto3">0</th>
+            </tr>
+            <tr>
+                <th>33</th>
+                <th class="nome">Luísa Menezes</th>
+                <th id="voto4">0</th>
+            </tr>
+            <tr>
+                <th>44</th>
+                <th class="nome">Raimundo Aguiar</th>
+                <th id="voto5">0</th>
+            </tr>
+        </table>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
